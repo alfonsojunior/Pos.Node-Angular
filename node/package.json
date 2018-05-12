@@ -1,0 +1,15 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "Desenvolvimento da aula de NodeJS",
+  "main": "app3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alfonso Noerenberg Junior",
+  "license": "ISC",
+  "dependencies": {
+    "exif": "^0.6.0",
+    "yargs": "^11.0.0"
+  }
+}

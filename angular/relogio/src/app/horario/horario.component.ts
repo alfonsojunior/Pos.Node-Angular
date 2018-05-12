@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HorarioComponent implements OnInit {
 
   fullDate = new Date();
+  // Pesquisar sobre PipeTransform para formatação
   hora = this.fullDate.toLocaleDateString() + ' ' + this.fullDate.toLocaleTimeString();
 
   constructor() { }

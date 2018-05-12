@@ -7,16 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HorarioComponent implements OnInit {
 
-  fullDate = new Date();
+  // fullDate = new Date();
   // Pesquisar sobre PipeTransform para formatação
-  hora = this.fullDate.toLocaleDateString() + ' ' + this.fullDate.toLocaleTimeString();
+  // hora = this.fullDate.toLocaleDateString() + ' ' + this.fullDate.toLocaleTimeString();
+  hora = new Date();
 
   constructor() { }
 
   ngOnInit() {
     setInterval( () => {
-      this.fullDate = new Date();
-      this.hora = this.fullDate.toLocaleDateString() + ' ' + this.fullDate.toLocaleTimeString();
+      /* this.fullDate = new Date();
+      this.hora = this.fullDate.toLocaleDateString() + ' ' + this.fullDate.toLocaleTimeString(); */
+      this.hora = new Date();
     }, 1000);
   }
 

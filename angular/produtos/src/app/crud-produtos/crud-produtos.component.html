@@ -1,0 +1,9 @@
+<h1>Produtos</h1>
+<ul>
+  <li *ngFor='let item of lista'>
+    {{ item.nome }} <button (click)='alterar()'>Alterar</button>
+  </li>
+</ul>
+Produto: <input type="text" [(ngModel)]="produto.nome"/><br/>
+<button (click)='inserir()'>Adicionar</button>
+<button (click)='limpar()'>Limpar</button>
